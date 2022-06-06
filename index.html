@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+   
+</head>
+
+<body>
+<div class = content>
+        <div class = 'board'></div>
+    <button-container>
+        <button class = "reset" onclick=newSize() value ="16">Shake</button>
+      <div>
+          <input type = "text"
+          id = input
+          placholder = "board size Y x Y "
+          value = "16"
+          onchange=newSize(this.value)>
+        <button class = "reset">Set Size</button>
+      </div>
+       
+    </button-container>
+  </div>
+    <color-container>
+      <button id = "white"
+      onclick = changeColor("white")
+      
+      >
+
+    </button>
+    <button id = "black"
+    onclick = changeColor("black")
+    
+    >
+
+  </button>
+  <button id = "red"
+  onclick = changeColor("red")
+  
+  >
+
+</button>
+<button id = "blue"
+onclick = changeColor("blue")
+
+>
+
+</button>
+<button id = "yellow"
+onclick = changeColor("yellow")
+
+>
+
+</button>
+<button id = "green"
+onclick = changeColor("green")
+
+>
+
+</button>
+  </div>
+    </color-container>
+    
+
+    
+    
+</body>
+<script src="main.js"></script>
+</html>
